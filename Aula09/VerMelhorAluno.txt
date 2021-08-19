@@ -1,0 +1,30 @@
+Algoritmo "VerMelhorAluno"
+Var
+   qtd_aluno : inteiro
+   nome : caractere
+   nota : real
+   i : inteiro
+   melhor_aluno : caractere
+   maior_nota : real
+Inicio
+   melhor_aluno <- ""
+   maior_nota <- 0
+
+   escreva("Quantos alunos a turma tem? ")
+   leia(qtd_aluno)
+
+   i <- 1
+   enquanto (i <= qtd_aluno) faca
+            escreval("ALUNO ", i)
+            escreva ("Nome do aluno: ")
+            leia(nome)
+            escreva ("Nota de ", nome, ": ")
+            leia(nota)
+            se (nota > maior_nota) entao
+               melhor_aluno <- nome
+               maior_nota <- nota
+            fimse
+            i <- i + 1
+   fimenquanto
+   escreval ("O melhor aproveitamento foi de ", melhor_aluno, " com a nota ", maior_nota)
+Fimalgoritmo

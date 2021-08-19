@@ -1,0 +1,20 @@
+Algoritmo "SomadorNumerico"
+Var
+   i, num : inteiro
+   soma, maior_valor : inteiro
+Inicio
+   i <- 1
+   soma <- 0
+   maior_valor <- 0
+   enquanto (i <= 10) faca
+            escreval("Digite ", i)
+            leia(num)
+            se (num > maior_valor) entao
+               maior_valor <- num
+            fimse
+            soma <- num + soma
+            i <- i + 1
+   fimenquanto
+   escreval("Resultado da soma dos numeros eh ", soma)
+   escreval("Maior valor digitado eh ", maior_valor)
+Fimalgoritmo

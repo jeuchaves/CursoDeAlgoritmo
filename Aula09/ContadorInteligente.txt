@@ -1,0 +1,21 @@
+Algoritmo "ContadorInteligente"
+Var
+   val_inicio, val_fim : inteiro
+Inicio
+   escreval("Inicio:")
+   leia(val_inicio)
+   escreval("Fim:")
+   leia(val_fim)
+
+   se (val_inicio <= val_fim) entao
+      enquanto (val_inicio <= val_fim) faca
+               escreva (val_inicio, ".. ")
+               val_inicio <- val_inicio + 1
+      fimenquanto
+   senao
+      enquanto (val_inicio >= val_fim) faca
+               escreva (val_inicio, ".. ")
+               val_inicio <- val_inicio - 1
+      fimenquanto
+   fimse
+Fimalgoritmo
