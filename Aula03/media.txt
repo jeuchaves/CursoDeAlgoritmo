@@ -1,0 +1,18 @@
+Algoritmo "media"
+// Site         : Curso em Video
+// Curso        : Algoritmo
+// Descrição    : Somar dois inteiros informados pelo usuario
+// Autor(a)     : Jeu Chaves Lima
+// Data atual   : 19/08/2021
+Var
+   num1 : inteiro
+   num2 : inteiro
+   media : real
+Inicio
+   escreval("Informe o primeiro numero")
+   leia(num1)
+   escreval("Informe o segundo numero")
+   leia(num2)
+   media <- (num1 + num2) / 2
+   escreval("Media: ", media)
+Fimalgoritmo
