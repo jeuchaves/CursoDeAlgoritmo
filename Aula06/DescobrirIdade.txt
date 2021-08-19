@@ -1,0 +1,13 @@
+Algoritmo "DescobrirIdade"
+Var
+   ano_nascimento : inteiro
+   ano_atual : inteiro
+   idade : inteiro
+Inicio
+   escreval("Informe o ano atual")
+   leia(ano_atual)
+   escreval("Informe o ano do seu nascimento")
+   leia(ano_nascimento)
+   idade <- ano_atual - ano_nascimento
+   escreval("Sua idade eh ", idade)
+Fimalgoritmo
