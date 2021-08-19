@@ -1,0 +1,33 @@
+Algoritmo SuperContador
+Var
+   opcao  inteiro
+   count  inteiro
+Inicio
+      repita
+         escreval(=================)
+         escreval(     MENU      )
+         escreval(=================)
+         escreval( [1] De 1 a 10 )
+         escreval( [2] De 10 a 1 )
+         escreval( [3] Sair      )
+         escreval(=================)
+         leia(opcao)
+         
+         escolha opcao
+                 caso 1
+                      count - 1
+                      enquanto (count = 10) faca
+                               escreva(count, .. )
+                               count - count + 1
+                      fimenquanto
+                      escreval()
+                 caso 2
+                      count - 10
+                      enquanto (count = 1) faca
+                               escreva(count, .. )
+                               count - count - 1
+                      fimenquanto
+                      escreval()
+         fimescolha
+      ate(opcao = 3)
+Fimalgoritmo
