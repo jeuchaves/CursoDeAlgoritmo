@@ -1,0 +1,10 @@
+Algoritmo "ConverterRealParaDolar"
+Var
+   dinheiro_real : real
+   dinheiro_dolar : real
+Inicio
+   escreval("Informe a quantidade em real")
+   leia(dinheiro_real)
+   dinheiro_dolar <- dinheiro_real / 5.42
+   escreval(dinheiro_dolar)
+Fimalgoritmo

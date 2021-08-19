@@ -1,0 +1,15 @@
+Algoritmo "CalcularEmprestimo"
+Var
+   valor_emprestimo : real
+   valor_total : real
+   quantidade_parcelas : inteiro
+   valor_mensal : real
+Inicio
+   escreval("Qual o valor do emprestimo?")
+   leia(valor_emprestimo)
+   valor_total <- valor_emprestimo * 1.2
+   escreval("Qual a quantidade de parcelas?")
+   leia(quantidade_parcelas)
+   valor_mensal <- valor_total / quantidade_parcelas
+   escreval("Voce pagara ", valor_mensal, " reais mensalmente")
+Fimalgoritmo
