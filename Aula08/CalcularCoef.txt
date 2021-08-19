@@ -1,0 +1,31 @@
+Algoritmo "CalcularCoef"
+Var
+   nota : real
+   coef : caractere
+Inicio
+   escreval("Qual sua nota?")
+   leia(nota)
+
+   se (nota >= 900) entao
+      coef <- "A"
+   senao
+        se (nota >= 800) entao
+           coef <- "B"
+        senao
+             se (nota >= 700) entao
+                coef <- "C"
+             senao
+                  se(nota >= 600) entao
+                       coef <- "D"
+                  senao
+                       se (nota >= 500) entao
+                          coef <- "E"
+                       senao
+                            coef <- "F"
+                       fimse
+                  fimse
+             fimse
+        fimse
+   fimse
+   escreval(coef)
+Fimalgoritmo
