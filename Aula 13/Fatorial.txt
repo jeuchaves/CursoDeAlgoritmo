@@ -1,0 +1,21 @@
+Algoritmo "Fatorial"
+Var
+   n : inteiro
+   f : inteiro
+funcao fatorial(num : inteiro) : inteiro
+var
+   i : inteiro
+   resposta : inteiro
+inicio
+   resposta <- 1
+   para i <- 1 ate num passo 1 faca
+        resposta <- resposta * i
+   fimpara
+   retorne resposta
+fimfuncao
+Inicio
+      escreval("Qual o numero? ")
+      leia(n)
+      f <- fatorial(n)
+      escreval(f)
+Fimalgoritmo
