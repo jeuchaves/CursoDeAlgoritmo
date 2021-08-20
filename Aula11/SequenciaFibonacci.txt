@@ -1,0 +1,16 @@
+Algoritmo "SequenciaFibonacci"
+Var
+   i : inteiro
+   num1, num2, num3 : inteiro
+Inicio
+      num1 <- 0
+      num2 <- 1
+      escreva(num1, ".. ")
+      escreva(num2, ".. ")
+      para i de 1 ate 13 passo 1 faca
+           num3 <- num1 + num2
+           escreva(num3, ".. ")
+           num1 <- num2
+           num2 <- num3
+      fimpara
+Fimalgoritmo
