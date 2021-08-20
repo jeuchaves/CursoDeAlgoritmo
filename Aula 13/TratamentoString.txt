@@ -1,0 +1,38 @@
+Algoritmo "TratamentoString"
+
+// Compr(String) : informa o tamanho da String
+// Copia(String, numeroInicial, numeroFinal) : Copia a substring
+// Maiusc(String) : Torna todos os caracteres da String em maiusculas
+// Minusc(String) : Torna todos os caracteres da String em minusculas
+// Pos(Substring, String) : Indica a posicao que a substring está na string
+// Asc(Char) : Retorna o valor ASC do caracter informado
+// Carac(int) : Retorna o caracter corresponde ao int referente ao ASC
+
+Var
+   nome : caractere
+Inicio
+   escreva("Digite um nome: ")
+   leia(nome)
+   
+   //Compr(nome)
+   escreval("O nome tem ", Compr(nome), " letras!")
+   
+   //Copia(nome, int1, int2)
+   escreval("A primeira letra do seu nome eh ", Copia(nome, 1, 1))
+   escreval("A ultima letra do seu nome eh ", Copia(nome, Compr(nome), 1))
+
+   //Maiusc(nome)
+   escreval("Seu nome em maiusculo eh ", Maiusc(nome))
+   
+   //Minusc(nome)
+   escreval("Seu nome em minusculo eh ", Minusc(nome))
+   
+   //Pos(substring, string)
+   escreval("Seu nome tem A na posicao ", Pos("A", Maiusc(nome)))
+   
+   //Asc(letra)
+   escreval("A primeira letra do seu nome corresponde na tabela ASC para o numero ", Asc(Maiusc(Copia(nome, 1, 1))))
+   
+   //Carac(77)
+   escreval("O numero 77 corresponde na tabela ASC ao caracter ", Carac(77))
+Fimalgoritmo
