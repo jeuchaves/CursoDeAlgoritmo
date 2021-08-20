@@ -1,0 +1,22 @@
+Algoritmo "ListagemTurma"
+Var
+   nome : vetor[1..4] de caractere
+   nota1 : vetor[1..4] de real
+   nota2 : vetor[1..4] de real
+   media : vetor[1..4] de real
+   contador : inteiro
+Inicio
+   para contador <- 1 ate 4 faca
+        escreva("Nome: ")
+        leia(nome[contador])
+        escreva("Primeira nota: ")
+        leia(nota1[contador])
+        escreva("Segunda nota: ")
+        leia(nota2[contador])
+        media[contador] <- (nota1[contador] + nota2[contador]) / 2
+        limpatela
+   fimpara
+   para contador <- 1 ate 4 faca
+        escreval(nome[contador]:15, " : ", media[contador])
+   fimpara
+Fimalgoritmo
