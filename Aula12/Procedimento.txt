@@ -1,0 +1,71 @@
+Algoritmo "Procedimento"
+
+Var
+opcao : inteiro
+resposta : real
+num1, num2 : inteiro
+
+procedimento solicitarNumeros()
+inicio
+      escreval("Primeiro numero")
+      leia(num1)
+      escreval("Segundo numero")
+      leia(num2)
+fimprocedimento
+
+procedimento somar()
+inicio
+      resposta <- num1 + num2
+      escreval(num1, " + ", num2, " = ", resposta)
+fimprocedimento
+
+procedimento subtrair()
+inicio
+      resposta <- num1 - num2
+      escreval(num1, " - ", num2, " = ", resposta)
+fimprocedimento
+
+procedimento dividir()
+inicio
+      se (num2 <> 0) entao
+         resposta <- num1 / num2
+         escreval(num1, " / ", num2, " = ", resposta)
+      senao
+         escreval("Impossivel realizar divisao")
+      fimse
+fimprocedimento
+
+procedimento multiplicar()
+inicio
+      resposta <- num1 * num2
+      escreval(num1, " * ", num2, " = ", resposta)
+fimprocedimento
+
+Inicio
+      repita
+      escreval("==================")
+      escreval("   CALCULADORA    ")
+      escreval("==================")
+      escreval(" [1] Soma         ")
+      escreval(" [2] Subtracao    ")
+      escreval(" [3] Divisao      ")
+      escreval(" [4] Multiplicacao")
+      escreval(" [5] Sair         ")
+      escreval("==================")
+      leia(opcao)
+      escolha opcao
+           caso 1
+                solicitarNumeros()
+                somar()
+           caso 2
+                solicitarNumeros()
+                subtrair()
+           caso 3
+                solicitarNumeros()
+                dividir()
+           caso 4
+                solicitarNumeros()
+                multiplicar()
+      fimescolha
+      ate (opcao = 5)
+Fimalgoritmo
